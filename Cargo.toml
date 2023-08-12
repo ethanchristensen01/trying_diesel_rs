@@ -1,0 +1,20 @@
+[package]
+name = "dbfun"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+doc = false
+
+[[bin]]
+name = "show_todos"
+path = "src/bin/show_todos.rs"
+doc = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4.26"
+diesel = { version = "2.1.0", features = ["sqlite", "chrono"] }
+dotenvy = "0.15"
+
